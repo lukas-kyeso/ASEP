@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+body {
+    font-family: sans-serif; 
+    margin: 0;
+    padding: 50px 50px 0px 50px;
+    position: relative;
+    /* background-image: url("https://i.imgur.com/iAqA5iL.png");  */
+}
+h1, h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 5em;
+}
+h1 span {
+    text-transform: uppercase;
+    background-color: rgba(58, 192, 58, 0.4);
+}
+h3 {
+    font-size: 2em;
+}
+ul {
+    list-style-type: none;
+    margin-right: 10em;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgba(58, 192, 58, 0.4);
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.full_page {
+    height: calc(100% - 90px);
+    /* min-height: 700px; */
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    /* float: left; */
+    position: absolute;
+}
+.logo img {
+    max-width: 100px;
+    width: auto;
+    height: auto;
+}
+.logo_big {
+    position: absolute;
+    left: 1000px;
+    z-index: -1;
+}
+.logo_big img {
+    /* width: 500px; */
+    /* height: 500px;  */
+}
+.wrapper {
+    vertical-align:middle;
+}
+.contact {
+    text-decoration: underline;
+    text-align: right;
+}
+.blurb_homepage {
+    width: 600px;
+}
