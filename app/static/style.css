@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
 body {
-    font-family: sans-serif; 
+    font-family: sans-serif;
     margin: 0;
     padding: 50px 50px 0px 50px;
     position: relative;
@@ -45,6 +45,26 @@ li a:hover:not(.active) {
 .active {
     background-color: #4CAF50;
 }
+
+a.button {
+    /* display: block; */
+    /* position: relative; */
+    float: left;
+    /* width: 120px; */
+    padding: 20px;
+    margin: 10px 20px 10px 0;
+    font-weight: 600;
+    text-align: center;
+    /* line-height: 50px; */
+    color: #FFF;
+    border-radius: 5px;
+    transition: all 0.2s ;
+    background: #2AA572;
+    text-decoration: none;
+}
+a.button:hover {
+    background: #21825B;
+}
 .full_page {
     height: calc(100% - 90px);
     /* min-height: 700px; */
@@ -61,7 +81,7 @@ li a:hover:not(.active) {
     width: auto;
     height: auto;
 }
-.logo_big {
+.right_element {
     position: absolute;
     left: 1000px;
     z-index: -1;

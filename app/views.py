@@ -20,7 +20,27 @@ def index():
                            user=user,
                            posts=posts)
 
-@app.route('/the_campaign')
-def the_campaign():
-    return render_template("the_campaign.html",
-                           title='The Campaign')
+@app.route('/our_campaign')
+def our_campaign():
+    return render_template("our_campaign.html",
+                           title='Our Campaign')
+
+@app.route('/who_we_are')
+def who_we_are():
+    return render_template("who_we_are.html",
+                           title='Who We Are')
+
+@app.route('/take_action')
+def take_action():
+    return render_template("take_action.html",
+                           title='Take Action')
+
+@app.route('/news')
+def news():
+    return render_template("news.html",
+                           title='News')
+
+@app.route('/available_support')
+def available_support():
+    return render_template("available_support.html",
+                           title='Available Support')
