@@ -5,6 +5,8 @@ body {
     margin: 0;
     padding: 50px 50px 0px 50px;
     position: relative;
+    overflow-y: scroll;
+
     /* background-image: url("https://i.imgur.com/iAqA5iL.png");  */
 }
 h1, h2 {
@@ -47,10 +49,10 @@ li a:hover:not(.active) {
 }
 
 a.button {
-    /* display: block; */
+    display: inline-block;
     /* position: relative; */
-    float: left;
-    /* width: 120px; */
+    /* float: left; */
+    width: 170px;
     padding: 20px;
     margin: 10px 20px 10px 0;
     font-weight: 600;
@@ -69,29 +71,41 @@ a.button:hover {
     height: calc(100% - 90px);
     /* min-height: 700px; */
     padding-left: 90px;
+    padding-right: 90px;
     display: flex;
-    align-items: center;
+    align-items: center; 
+} 
+.centered_page {
+    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+}
+.centered_page img {
+    max-width: 250px;
+    min-width: 200px;
+    max-height: 250px;
+    vertical-align: middle;
+    margin: auto 20px;
 }
 .logo {
     /* float: left; */
     position: absolute;
 }
 .logo img {
-    max-width: 100px;
+    max-width: 70px;
     width: auto;
     height: auto;
 }
 .right_element {
     position: absolute;
-    left: 1000px;
+    left: 65%;
+    width: 30%;
     z-index: -1;
 }
-.logo_big img {
-    /* width: 500px; */
-    /* height: 500px;  */
-}
-.wrapper {
-    vertical-align:middle;
+.right_element img {
+    height: 70%;
+    /* width: 500px;
+    height: 500px;  */
 }
 .contact {
     text-decoration: underline;
@@ -99,4 +113,11 @@ a.button:hover {
 }
 .blurb_homepage {
     width: 600px;
+}
+.quote {
+    font-size: 3em;
+    font-style: italic;
+}
+.quote span {
+    font-size: .5em;
 }
