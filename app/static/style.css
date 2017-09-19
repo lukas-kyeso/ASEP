@@ -44,28 +44,28 @@ li a:hover:not(.active) {
 }
 a.button {
     display: inline-block;
-    width: 170px;
+    width: 180px;
     padding: 20px;
     margin: 10px 20px 10px 0;
-    font-weight: 600;
+    font-weight: 300;
     text-align: center;
     color: #FFF;
     border-radius: 5px;
     transition: all 0.2s ;
     background: #2AA572;
     text-decoration: none;
+    font-size: 1.2em;
 }
 a.button:hover {
     background: #21825B;
 }
 .full_page {
     height: 800px;
-    /* min-height: 700px; */
     padding-left: 90px;
     padding-right: 90px;
     display: flex;
     align-items: center; 
-    width: 850px;
+    justify-content: space-between;
 } 
 .centered_page {
     text-align: center;
@@ -73,8 +73,6 @@ a.button:hover {
     margin: 0 auto;
 }
 .centered_page img {
-    /* max-width: 250px; */
-    /* min-width: 200px; */
     max-height: 170px;
     vertical-align: middle;
     margin: auto 20px;
@@ -88,9 +86,12 @@ a.button:hover {
     width: auto;
     height: auto;
 }
+.left_element {
+    float: left;
+    width: 650px;
+}
 .right_element {
-    position: absolute;
-    left: 65%;
+    float: right;
     width: 30%;
     z-index: -1;
 }
@@ -102,7 +103,8 @@ a.button:hover {
     text-align: right;
 }
 .blurb {
-    font-size: 1.6em;
+    font-size: 1.3em;
+    line-height: 1.6em;
     margin: 50px auto;
     /* width: 600px; */
 }
