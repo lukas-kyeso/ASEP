@@ -47,5 +47,9 @@ def available_support():
     return render_template("available_support.html",
                            title='Available Support')
 
+@application.errorhandler(404)
+def not_found_error(error):
+    return render_template('404.html'), 404
+
 if __name__ == "__main__":
     application.run(debug = True)
